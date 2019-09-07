@@ -1,0 +1,28 @@
+{
+  "name": "docker-mjml-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever --minUptime=1000 --spinSleepTime=2000 index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micoli/docker-mjml-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micoli/docker-mjml-server/issues"
+  },
+  "homepage": "https://github.com/micoli/docker-mjml-server#readme",
+  "dependencies": {
+    "fastify": "^2.8.0",
+    "fastify-metrics": "^4.0.5",
+    "fastify-peekaboo": "^0.4.0-beta",
+    "forever": "^1.0.0",
+    "fs": "0.0.1-security",
+    "mjml": "^4.4.1",
+    "nodemon": "^1.19.2"
+  }
+}
