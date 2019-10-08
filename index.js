@@ -35,6 +35,14 @@ app.post('/', async (request, reply) => {
     reply.send(result)
 })
 
+app.get('/', async (request, reply) => {
+    reply.send({})
+})
+
+app.get('/healtz', async (request, reply) => {
+    reply.send({})
+})
+
 app.listen(process.env.PORT || 3000, process.env.ADDRESS || '0.0.0.0', (err, address) => {
     if (err) throw err
     app.log.info(`Server listening on ${address}`)
